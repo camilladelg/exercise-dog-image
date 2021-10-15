@@ -75,7 +75,7 @@ class App extends React.Component {
     localStorage.setItem('namedDogURL', JSON.stringify(newArray));
   }
 
-  renderJokeElement() {
+  renderImageElement() {
     const { nameDog } = this.state;
     return (
       <div>
@@ -104,7 +104,7 @@ class App extends React.Component {
 
     return (
       <div>
-        {!image ? loadingElement : this.renderJokeElement() }
+        {!image ? loadingElement : this.renderImageElement() }
       </div>
     )
   }
